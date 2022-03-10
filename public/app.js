@@ -79,15 +79,15 @@ function addGiftItem(data) {
         <div data-streakid=${isPendingStreak(data) ? streakId : ''}>
             <img class="miniprofilepicture" src="${data.profilePictureUrl}">
             <span>
-                <b>${generateUsernameLink(data)}:</b> <span>${data.extendedGiftInfo.describe}</span><br>
+                <b>${generateUsernameLink(data)}:</b> <span>sent <b>${data.extendedGiftInfo.name}</b></span><br>
                 <div>
                     <table>
                         <tr>
                             <td><img class="gifticon" src="${(data.extendedGiftInfo.icon || data.extendedGiftInfo.image).url_list[0]}"></td>
                             <td>
-                                <span>Name: <b>${data.extendedGiftInfo.name}</b> (ID:${data.giftId})<span><br>
+                               
                                 <span>Repeat: <b style="${isPendingStreak(data) ? 'color:red' : ''}">x${data.gift.repeat_count.toLocaleString()}</b><span><br>
-                                <span>Cost: <b>${(data.extendedGiftInfo.diamond_count * data.gift.repeat_count).toLocaleString()} Diamonds</b><span>
+                                <span>Cost: <b>${(data.extendedGiftInfo.diamond_count * data.gift.repeat_count).toLocaleString()} Coins</b><span>
                             </td>
                         </tr>
                     </tabl>
