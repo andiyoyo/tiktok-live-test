@@ -30,7 +30,7 @@ function sanitize(text) {
 }
 
 function updateRoomStats() {
-    $('#roomStats').html(`Viewers: <b>${viewerCount.toLocaleString()}</b> Likes: <b>${likeCount.toLocaleString()}</b> Earned Diamonds: <b>${diamondsCount.toLocaleString()}</b>`)
+    $('#roomStats').html(`Viewers: <b>${viewerCount.toLocaleString()}</b> Likes: <b>${likeCount.toLocaleString()}</b> Total Coins: <b>${diamondsCount.toLocaleString()}</b>`)
 }
 
 function generateUsernameLink(data) {
