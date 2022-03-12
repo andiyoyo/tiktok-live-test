@@ -163,9 +163,9 @@ ioConnection.on('member', (msg) => {
     }, joinMsgDelay);
 })
 
-ioConnection.on('chat', (msg) => {
-    addChatItem('', msg, msg.comment);
-})
+//ioConnection.on('chat', (msg) => {
+//    addChatItem('', msg, msg.comment);
+// })
 
 ioConnection.on('gift', (data) => {
     addGiftItem(data);
